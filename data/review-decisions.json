@@ -1,0 +1,10 @@
+{
+  "approvedPolicy": "Unconfirmed whisky prices are staff inquiry; preserve duplicate source rows.",
+  "whiskyUnitConfirmed": false,
+  "duplicateBalvenieConfirmed": false,
+  "missingWhisky": [
+    "speyside-015",
+    "speyside-022",
+    "speyside-023"
+  ]
+}

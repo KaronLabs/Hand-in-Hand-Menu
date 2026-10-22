@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {parseWhiskyPrice,formatPrice} from '../../src/core/menu.mjs';
+for(const [raw,want] of [['2,4',24000],['36',360000],['130',1300000],['2.0',20000],[' 3,8 ',38000]]) test(`verified ${raw} is ${want}`,()=>assert.equal(parseWhiskyPrice(raw,'verified').amountKrw,want));
+for(const raw of [null,undefined,'','  ']) test(`missing ${String(raw)} is staff inquiry`,()=>{const p=parseWhiskyPrice(raw,'verified');assert.equal(p.amountKrw,null);assert.equal(p.status,'missing');assert.equal(formatPrice(p),'직원 문의');});
+test('unverified unit never infers money',()=>assert.deepEqual(parseWhiskyPrice('2,4','unverified'),{raw:'2,4',status:'unverified',amountKrw:null}));
+for(const raw of ['0','-1','1,23','1,2,3','abc','NaN','9007199254740993',42,{}]) test(`reject invalid price ${JSON.stringify(raw)}`,()=>assert.throws(()=>parseWhiskyPrice(raw,'verified'),{code:'invalid_price'}));
+test('unknown unit state is rejected',()=>assert.throws(()=>parseWhiskyPrice('2,4','whatever'),{code:'invalid_unit'}));
+test('verified integer is formatted with won',()=>assert.equal(formatPrice({status:'verified',amountKrw:1300000}),'1,300,000원'));
+test('unverified/missing amounts cannot display zero or numeric guesses',()=>{for(const p of [{status:'unverified',amountKrw:24000},{status:'missing',amountKrw:0},{status:'verified',amountKrw:null}])assert.equal(formatPrice(p),'직원 문의');});

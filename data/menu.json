@@ -1,0 +1,2397 @@
+{
+  "categories": [
+    {
+      "id": "food",
+      "titleKo": "푸드",
+      "titleOriginal": "food menu",
+      "sourceFile": "112400.png"
+    },
+    {
+      "id": "campari",
+      "titleKo": "캄파리 클래식",
+      "titleOriginal": "Campari Classico",
+      "sourceFile": "112413.png"
+    },
+    {
+      "id": "italy",
+      "titleKo": "이탈리아 칵테일",
+      "titleOriginal": "Travel to Italy",
+      "sourceFile": "112435.png"
+    },
+    {
+      "id": "classic",
+      "titleKo": "클래식",
+      "titleOriginal": "Classic",
+      "sourceFile": "112440.png"
+    },
+    {
+      "id": "modern",
+      "titleKo": "모던",
+      "titleOriginal": "Modern",
+      "sourceFile": "112445.png"
+    },
+    {
+      "id": "speyside",
+      "titleKo": "위스키",
+      "titleOriginal": "Speyside",
+      "sourceFile": "112449.png"
+    }
+  ],
+  "items": [
+    {
+      "id": "food-001",
+      "categoryId": "food",
+      "nameKo": "카쵸 에 페페",
+      "nameOriginal": "CACIO E PEPE",
+      "ingredientsKo": [
+        "파스타",
+        "페코리노 치즈",
+        "흑후추"
+      ],
+      "ingredientsOriginal": [
+        "pasta",
+        "pecorino cheese",
+        "black pepper"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 22000,
+          "status": "verified",
+          "raw": "22,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112400.png",
+          "pageId": "112400",
+          "rowIndex": 1
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "food-002",
+      "categoryId": "food",
+      "nameKo": "아마트리치아나",
+      "nameOriginal": "AMATRICIANA",
+      "ingredientsKo": [
+        "파스타",
+        "페코리노 치즈",
+        "토마토",
+        "관찰레"
+      ],
+      "ingredientsOriginal": [
+        "pasta",
+        "pecorino cheese",
+        "tomato",
+        "guanciale"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 24000,
+          "status": "verified",
+          "raw": "24,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112400.png",
+          "pageId": "112400",
+          "rowIndex": 2
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "food-003",
+      "categoryId": "food",
+      "nameKo": "탈리아타 디 만조",
+      "nameOriginal": "TAGLIATA DI MANZO",
+      "ingredientsKo": [
+        "소고기",
+        "루콜라",
+        "토마토",
+        "그라나 파다노",
+        "엑스트라 버진 올리브오일"
+      ],
+      "ingredientsOriginal": [
+        "meat",
+        "rucola",
+        "tomato",
+        "grana padano",
+        "evo"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 35000,
+          "status": "verified",
+          "raw": "35,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112400.png",
+          "pageId": "112400",
+          "rowIndex": 3
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "food-004",
+      "categoryId": "food",
+      "nameKo": "칼라마리",
+      "nameOriginal": "CALAMARI",
+      "ingredientsKo": [
+        "오징어 튀김",
+        "블루치즈 소스",
+        "캄파리 폰즈 소스"
+      ],
+      "ingredientsOriginal": [
+        "fried squid",
+        "blue cheese sauce",
+        "campari ponzu sauce"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 25000,
+          "status": "verified",
+          "raw": "25,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112400.png",
+          "pageId": "112400",
+          "rowIndex": 4
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "food-005",
+      "categoryId": "food",
+      "nameKo": "아란치니",
+      "nameOriginal": "ARANCINI 6PCS",
+      "ingredientsKo": [
+        "토마토",
+        "바질",
+        "그라나 파다노"
+      ],
+      "ingredientsOriginal": [
+        "tomato",
+        "basil",
+        "granapadano"
+      ],
+      "options": [],
+      "servingNote": "6개",
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 18000,
+          "status": "verified",
+          "raw": "18,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112400.png",
+          "pageId": "112400",
+          "rowIndex": 5
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "food-006",
+      "categoryId": "food",
+      "nameKo": "깔조네",
+      "nameOriginal": "CALZONE",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [
+        {
+          "labelKo": "바질 페스토",
+          "labelOriginal": "basil pesto"
+        },
+        {
+          "labelKo": "디아볼라",
+          "labelOriginal": "diavola"
+        },
+        {
+          "labelKo": "마르게리타",
+          "labelOriginal": "margherita"
+        }
+      ],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 26000,
+          "status": "verified",
+          "raw": "26,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112400.png",
+          "pageId": "112400",
+          "rowIndex": 6
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "food-007",
+      "categoryId": "food",
+      "nameKo": "이탈리안 피자",
+      "nameOriginal": "ITALIAN PIZZA",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [
+        {
+          "labelKo": "고르곤졸라",
+          "labelOriginal": "gorgonzola"
+        },
+        {
+          "labelKo": "디아볼라",
+          "labelOriginal": "diavola"
+        },
+        {
+          "labelKo": "마르게리타",
+          "labelOriginal": "margherita"
+        }
+      ],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 28000,
+          "status": "verified",
+          "raw": "28,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112400.png",
+          "pageId": "112400",
+          "rowIndex": 7
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "food-008",
+      "categoryId": "food",
+      "nameKo": "일 트리콜로레 샌드위치",
+      "nameOriginal": "IL TRICOLORE SANDWICH",
+      "ingredientsKo": [
+        "바질 페스토",
+        "루콜라",
+        "선드라이 토마토",
+        "모차렐라 치즈",
+        "모르타델라",
+        "프로슈토"
+      ],
+      "ingredientsOriginal": [
+        "basil pesto",
+        "rucola",
+        "sun dried tomato",
+        "mozzarella cheese",
+        "mortadella",
+        "prosciutto"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 23000,
+          "status": "verified",
+          "raw": "23,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112400.png",
+          "pageId": "112400",
+          "rowIndex": 8
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "food-009",
+      "categoryId": "food",
+      "nameKo": "프로슈토 & 멜론 치즈 플래터",
+      "nameOriginal": "PROSCIUTTO & MELON AND CHEESE PLATTER",
+      "ingredientsKo": [
+        "이탈리안 햄",
+        "치즈",
+        "멜론"
+      ],
+      "ingredientsOriginal": [
+        "Italian ham",
+        "cheese",
+        "melon"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 30000,
+          "status": "verified",
+          "raw": "30,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112400.png",
+          "pageId": "112400",
+          "rowIndex": 9
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "food-010",
+      "categoryId": "food",
+      "nameKo": "브리치즈 & 올리브 절임",
+      "nameOriginal": "CHEESE & OLIVES",
+      "ingredientsKo": [
+        "그린 올리브",
+        "블랙 올리브",
+        "칼라마타 올리브",
+        "허브"
+      ],
+      "ingredientsOriginal": [
+        "green olive",
+        "black olive",
+        "kalamata olive",
+        "herbs"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 20000,
+          "status": "verified",
+          "raw": "20,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112400.png",
+          "pageId": "112400",
+          "rowIndex": 10
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "food-011",
+      "categoryId": "food",
+      "nameKo": "토르타 알 아란체",
+      "nameOriginal": "TORTA AL’ ARANCIA",
+      "ingredientsKo": [
+        "오렌지",
+        "바닐라",
+        "마멀레이드"
+      ],
+      "ingredientsOriginal": [
+        "orange",
+        "vanilla",
+        "marmalade"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 12000,
+          "status": "verified",
+          "raw": "12,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112400.png",
+          "pageId": "112400",
+          "rowIndex": 11
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "campari-001",
+      "categoryId": "campari",
+      "nameKo": "밀라노 토리노",
+      "nameOriginal": "MILANO TORINO (MiTo)",
+      "ingredientsKo": [
+        "캄파리",
+        "스위트 베르무트"
+      ],
+      "ingredientsOriginal": [
+        "Campari",
+        "Sweet Vermouth"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 20000,
+          "status": "verified",
+          "raw": "20,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112413.png",
+          "pageId": "112413",
+          "rowIndex": 1
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "campari-002",
+      "categoryId": "campari",
+      "nameKo": "가리발디",
+      "nameOriginal": "GARIBALDI",
+      "ingredientsKo": [
+        "캄파리",
+        "생오렌지 주스"
+      ],
+      "ingredientsOriginal": [
+        "Campari",
+        "Fresh Orange juice"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 20000,
+          "status": "verified",
+          "raw": "20,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112413.png",
+          "pageId": "112413",
+          "rowIndex": 2
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "campari-003",
+      "categoryId": "campari",
+      "nameKo": "아메리카노",
+      "nameOriginal": "AMERICANO",
+      "ingredientsKo": [
+        "캄파리",
+        "스위트 베르무트",
+        "소다"
+      ],
+      "ingredientsOriginal": [
+        "Campari",
+        "Sweet Vermouth",
+        "Soda"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 20000,
+          "status": "verified",
+          "raw": "20,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112413.png",
+          "pageId": "112413",
+          "rowIndex": 3
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "campari-004",
+      "categoryId": "campari",
+      "nameKo": "스발리아토",
+      "nameOriginal": "SBAGLIATO",
+      "ingredientsKo": [
+        "프로세코",
+        "캄파리",
+        "스위트 베르무트"
+      ],
+      "ingredientsOriginal": [
+        "Prosecco",
+        "Campari",
+        "Sweet Vermouth"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 22000,
+          "status": "verified",
+          "raw": "22,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112413.png",
+          "pageId": "112413",
+          "rowIndex": 4
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "campari-005",
+      "categoryId": "campari",
+      "nameKo": "네그로니",
+      "nameOriginal": "NEGRONI",
+      "ingredientsKo": [
+        "진",
+        "캄파리",
+        "스위트 베르무트"
+      ],
+      "ingredientsOriginal": [
+        "Gin",
+        "Campari",
+        "Sweet Vermouth"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 22000,
+          "status": "verified",
+          "raw": "22,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112413.png",
+          "pageId": "112413",
+          "rowIndex": 5
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "campari-006",
+      "categoryId": "campari",
+      "nameKo": "불바르디에",
+      "nameOriginal": "BOULEVARDIER",
+      "ingredientsKo": [
+        "라이 위스키",
+        "캄파리",
+        "스위트 베르무트"
+      ],
+      "ingredientsOriginal": [
+        "Rye whisky",
+        "Campari",
+        "Sweet Vermouth"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 24000,
+          "status": "verified",
+          "raw": "24,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112413.png",
+          "pageId": "112413",
+          "rowIndex": 6
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "campari-007",
+      "categoryId": "campari",
+      "nameKo": "올드 팔",
+      "nameOriginal": "OLD PAL",
+      "ingredientsKo": [
+        "라이 위스키",
+        "캄파리",
+        "드라이 베르무트"
+      ],
+      "ingredientsOriginal": [
+        "Rye whisky",
+        "Campari",
+        "Dry Vermouth"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 25000,
+          "status": "verified",
+          "raw": "25,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112413.png",
+          "pageId": "112413",
+          "rowIndex": 7
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "italy-001",
+      "categoryId": "italy",
+      "nameKo": "하드 스타트",
+      "nameOriginal": "HARD START",
+      "ingredientsKo": [
+        "페르넷 브랑카",
+        "브랑카멘타"
+      ],
+      "ingredientsOriginal": [
+        "Ferney Branca",
+        "Brancamenta"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 20000,
+          "status": "verified",
+          "raw": "20,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112435.png",
+          "pageId": "112435",
+          "rowIndex": 1
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "italy-002",
+      "categoryId": "italy",
+      "nameKo": "지로 디탈리아",
+      "nameOriginal": "GIRO D’ITALIA",
+      "ingredientsKo": [
+        "버번 위스키",
+        "레몬",
+        "아가베 시럽",
+        "바질",
+        "토마토"
+      ],
+      "ingredientsOriginal": [
+        "Bourbon whisky",
+        "Lemon",
+        "Agave syrup",
+        "Basil",
+        "Tomato"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 25000,
+          "status": "verified",
+          "raw": "25,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112435.png",
+          "pageId": "112435",
+          "rowIndex": 2
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "italy-003",
+      "categoryId": "italy",
+      "nameKo": "롬 위드 어 뷰",
+      "nameOriginal": "ROME WITH A VIEW",
+      "ingredientsKo": [
+        "캄파리",
+        "드라이 베르무트",
+        "라임",
+        "소다"
+      ],
+      "ingredientsOriginal": [
+        "Campari",
+        "Dry vermouth",
+        "Lime",
+        "Soda"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 22000,
+          "status": "verified",
+          "raw": "22,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112435.png",
+          "pageId": "112435",
+          "rowIndex": 3
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "italy-004",
+      "categoryId": "italy",
+      "nameKo": "디스코 볼란테",
+      "nameOriginal": "DISCO VOLANTE",
+      "ingredientsKo": [
+        "진",
+        "아페롤",
+        "압생트",
+        "레몬",
+        "우유"
+      ],
+      "ingredientsOriginal": [
+        "Gin",
+        "Aperol",
+        "Absinthe",
+        "Lemon",
+        "Milk"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 22000,
+          "status": "verified",
+          "raw": "22,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112435.png",
+          "pageId": "112435",
+          "rowIndex": 4
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "italy-005",
+      "categoryId": "italy",
+      "nameKo": "이탈리안 벅",
+      "nameOriginal": "ITALIAN BUCK",
+      "ingredientsKo": [
+        "치나르",
+        "몬테네그로",
+        "라임",
+        "진저비어"
+      ],
+      "ingredientsOriginal": [
+        "Cynar",
+        "Montenegro",
+        "Lime",
+        "Ginger beer"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 24000,
+          "status": "verified",
+          "raw": "24,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112435.png",
+          "pageId": "112435",
+          "rowIndex": 5
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "italy-006",
+      "categoryId": "italy",
+      "nameKo": "아페롤 스프리츠",
+      "nameOriginal": "APEROL SPRITZ",
+      "ingredientsKo": [
+        "아페롤",
+        "프로세코",
+        "소다",
+        "오렌지",
+        "로즈메리"
+      ],
+      "ingredientsOriginal": [
+        "Aperol",
+        "Prosecco",
+        "Soda",
+        "Orange",
+        "Rosemary"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 22000,
+          "status": "verified",
+          "raw": "22,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112435.png",
+          "pageId": "112435",
+          "rowIndex": 6
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "italy-007",
+      "categoryId": "italy",
+      "nameKo": "초크 앤 스모크",
+      "nameOriginal": "CHOKE & SMOKE",
+      "ingredientsKo": [
+        "치나르",
+        "탈리스커 10년",
+        "오렌지 비터",
+        "데메라라"
+      ],
+      "ingredientsOriginal": [
+        "Cynar",
+        "Talisker 10y",
+        "Orange Bitter",
+        "Demerara"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 22000,
+          "status": "verified",
+          "raw": "22,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112435.png",
+          "pageId": "112435",
+          "rowIndex": 7
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "italy-008",
+      "categoryId": "italy",
+      "nameKo": "비터 주세페",
+      "nameOriginal": "BITTER GIUSEPPE",
+      "ingredientsKo": [
+        "치나르",
+        "스위트 베르무트",
+        "레몬",
+        "오렌지 비터"
+      ],
+      "ingredientsOriginal": [
+        "Cynar",
+        "Sweet Vermouth",
+        "Lemon",
+        "Orange bitter"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 24000,
+          "status": "verified",
+          "raw": "24,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112435.png",
+          "pageId": "112435",
+          "rowIndex": 8
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "classic-001",
+      "categoryId": "classic",
+      "nameKo": "진 피즈",
+      "nameOriginal": "GIN FIZZ",
+      "ingredientsKo": [
+        "진",
+        "레몬",
+        "사탕수수 설탕",
+        "소다"
+      ],
+      "ingredientsOriginal": [
+        "Gin",
+        "Lemon",
+        "Sugar cane",
+        "Soda"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 22000,
+          "status": "verified",
+          "raw": "22,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112440.png",
+          "pageId": "112440",
+          "rowIndex": 1
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "classic-002",
+      "categoryId": "classic",
+      "nameKo": "올드 패션드",
+      "nameOriginal": "OLD FASHIONED",
+      "ingredientsKo": [
+        "라이 또는 버번 위스키",
+        "비터",
+        "사탕수수 설탕"
+      ],
+      "ingredientsOriginal": [
+        "Rye or Bourbon whiskey",
+        "Bitter",
+        "Sugar cane"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 25000,
+          "status": "verified",
+          "raw": "25,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112440.png",
+          "pageId": "112440",
+          "rowIndex": 2
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "classic-003",
+      "categoryId": "classic",
+      "nameKo": "사제락",
+      "nameOriginal": "SAZERAC",
+      "ingredientsKo": [
+        "라이 위스키 또는 코냑",
+        "압생트",
+        "사탕수수 설탕",
+        "비터"
+      ],
+      "ingredientsOriginal": [
+        "Rye whiskey or Cognac",
+        "Absinthe",
+        "Sugar cane",
+        "Bitter"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 26000,
+          "status": "verified",
+          "raw": "26,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112440.png",
+          "pageId": "112440",
+          "rowIndex": 3
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "classic-004",
+      "categoryId": "classic",
+      "nameKo": "사이드카",
+      "nameOriginal": "SIDE CAR",
+      "ingredientsKo": [
+        "코냑",
+        "레몬",
+        "코앵트로"
+      ],
+      "ingredientsOriginal": [
+        "Cognac",
+        "Lemon",
+        "Cointreau"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 25000,
+          "status": "verified",
+          "raw": "25,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112440.png",
+          "pageId": "112440",
+          "rowIndex": 4
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "classic-005",
+      "categoryId": "classic",
+      "nameKo": "맨해튼",
+      "nameOriginal": "MANHATTAN",
+      "ingredientsKo": [
+        "라이 위스키",
+        "스위트 베르무트",
+        "비터"
+      ],
+      "ingredientsOriginal": [
+        "Rye whiskey",
+        "Sweet vermouth",
+        "Bitter"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 25000,
+          "status": "verified",
+          "raw": "25,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112440.png",
+          "pageId": "112440",
+          "rowIndex": 5
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "classic-006",
+      "categoryId": "classic",
+      "nameKo": "챈들러 김렛",
+      "nameOriginal": "CHANDLER GIMLET",
+      "ingredientsKo": [
+        "네이비 스트렝스 진",
+        "로즈 라임 주스",
+        "오렌지 비터"
+      ],
+      "ingredientsOriginal": [
+        "Navy Strength Gin",
+        "Roses Lime Juice",
+        "Orange Bitter"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 25000,
+          "status": "verified",
+          "raw": "25,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112440.png",
+          "pageId": "112440",
+          "rowIndex": 6
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "classic-007",
+      "categoryId": "classic",
+      "nameKo": "다이키리",
+      "nameOriginal": "DAIQUIRI",
+      "ingredientsKo": [
+        "베리타스 럼",
+        "라임",
+        "사탕수수 설탕"
+      ],
+      "ingredientsOriginal": [
+        "Veritas Rum",
+        "Lime",
+        "Sugar cane"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 23000,
+          "status": "verified",
+          "raw": "23,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112440.png",
+          "pageId": "112440",
+          "rowIndex": 7
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "modern-001",
+      "categoryId": "modern",
+      "nameKo": "세컨드 서브",
+      "nameOriginal": "SECOND SERVE",
+      "ingredientsKo": [
+        "피노 셰리",
+        "몬테네그로",
+        "라임",
+        "소다"
+      ],
+      "ingredientsOriginal": [
+        "Fino sherry",
+        "Montenegro",
+        "Lime",
+        "Soda"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 22000,
+          "status": "verified",
+          "raw": "22,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112445.png",
+          "pageId": "112445",
+          "rowIndex": 1
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "modern-002",
+      "categoryId": "modern",
+      "nameKo": "바티칸 시티",
+      "nameOriginal": "VATICAN CITY",
+      "ingredientsKo": [
+        "마티니 비앙코",
+        "젠티안 리큐르",
+        "라임",
+        "소다"
+      ],
+      "ingredientsOriginal": [
+        "Martini bianco",
+        "Gentian liqueur",
+        "Lime",
+        "Soda"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 22000,
+          "status": "verified",
+          "raw": "22,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112445.png",
+          "pageId": "112445",
+          "rowIndex": 2
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "modern-003",
+      "categoryId": "modern",
+      "nameKo": "럭키 데빌",
+      "nameOriginal": "LUCKY DEVIL",
+      "ingredientsKo": [
+        "다크 럼",
+        "아베르나 아마로",
+        "베네딕틴 D.O.M.",
+        "라프로익 10년"
+      ],
+      "ingredientsOriginal": [
+        "Dark rum",
+        "Averna amaro",
+        "Benedictine D·O·M",
+        "Laphroaig 10y"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 26000,
+          "status": "verified",
+          "raw": "26,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112445.png",
+          "pageId": "112445",
+          "rowIndex": 3
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "modern-004",
+      "categoryId": "modern",
+      "nameKo": "라스트 커레스",
+      "nameOriginal": "LAST CARESS",
+      "ingredientsKo": [
+        "라이 위스키",
+        "베네딕틴 D.O.M.",
+        "메스칼",
+        "마라스키노"
+      ],
+      "ingredientsOriginal": [
+        "Rye whiskey",
+        "Benedictine D·O·M",
+        "Mezcal",
+        "Maraschino"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 28000,
+          "status": "verified",
+          "raw": "28,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112445.png",
+          "pageId": "112445",
+          "rowIndex": 4
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "modern-005",
+      "categoryId": "modern",
+      "nameKo": "페이퍼 플레인",
+      "nameOriginal": "PAPER PLANE",
+      "ingredientsKo": [
+        "버번 위스키",
+        "아페롤",
+        "아마로 노니노",
+        "레몬"
+      ],
+      "ingredientsOriginal": [
+        "Bourbon whiskey",
+        "Aperol",
+        "Amaro nonino",
+        "Lemon"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 23000,
+          "status": "verified",
+          "raw": "23,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112445.png",
+          "pageId": "112445",
+          "rowIndex": 5
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "modern-006",
+      "categoryId": "modern",
+      "nameKo": "배드 애스 아즈텍 워리어스",
+      "nameOriginal": "BAD ASS AZTEC WARRIORS",
+      "ingredientsKo": [
+        "메스칼",
+        "옐로 샤르트뢰즈",
+        "라임",
+        "비터",
+        "진저에일"
+      ],
+      "ingredientsOriginal": [
+        "Mezcal",
+        "Chartreuse yellow",
+        "Lime",
+        "Bitter",
+        "Ginger ale"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 26000,
+          "status": "verified",
+          "raw": "26,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112445.png",
+          "pageId": "112445",
+          "rowIndex": 6
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "modern-007",
+      "categoryId": "modern",
+      "nameKo": "페니실린",
+      "nameOriginal": "PENICILLIN",
+      "ingredientsKo": [
+        "스카치 위스키",
+        "아드벡 10년",
+        "레몬",
+        "생강",
+        "꿀"
+      ],
+      "ingredientsOriginal": [
+        "Scotch whisky",
+        "Ardbeg10",
+        "Lemon",
+        "Ginger",
+        "Honey"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 24000,
+          "status": "verified",
+          "raw": "24,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112445.png",
+          "pageId": "112445",
+          "rowIndex": 7
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "modern-008",
+      "categoryId": "modern",
+      "nameKo": "리치맨스 모히토",
+      "nameOriginal": "RICHMAN’S MOJITO",
+      "ingredientsKo": [
+        "다크 럼 (고슬링스·에미넨테)",
+        "라임",
+        "민트"
+      ],
+      "ingredientsOriginal": [
+        "Dark Rums (Goslings · Emminente)",
+        "Lime",
+        "Mint"
+      ],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "single",
+        "single": {
+          "amountKrw": 28000,
+          "status": "verified",
+          "raw": "28,000"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112445.png",
+          "pageId": "112445",
+          "rowIndex": 8
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-001",
+      "categoryId": "speyside",
+      "nameKo": "발베니 12년",
+      "nameOriginal": "Balvenie 12Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "2,4"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "36"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 1
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-002",
+      "categoryId": "speyside",
+      "nameKo": "발베니 12년",
+      "nameOriginal": "Balvenie 12Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "2,4"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "36"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 2
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-003",
+      "categoryId": "speyside",
+      "nameKo": "발베니 14년",
+      "nameOriginal": "Balvenie 14Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "3,4"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "54"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 3
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-004",
+      "categoryId": "speyside",
+      "nameKo": "발베니 16년",
+      "nameOriginal": "Balvenie 16Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "4,5"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "72"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 4
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-005",
+      "categoryId": "speyside",
+      "nameKo": "발베니 21년",
+      "nameOriginal": "Balvenie 21Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "7,5"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "130"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 5
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-006",
+      "categoryId": "speyside",
+      "nameKo": "글렌그란트 10년",
+      "nameOriginal": "Glensgrant 10Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "2,0"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "30"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 6
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-007",
+      "categoryId": "speyside",
+      "nameKo": "글렌그란트 12년",
+      "nameOriginal": "Glensgrant 12Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "2,2"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "34"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 7
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-008",
+      "categoryId": "speyside",
+      "nameKo": "글렌그란트 15년",
+      "nameOriginal": "Glensgrant 15Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "2,8"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "42"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 8
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-009",
+      "categoryId": "speyside",
+      "nameKo": "글렌그란트 21년",
+      "nameOriginal": "Glensgrant 21Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "6,8"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "110"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 9
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-010",
+      "categoryId": "speyside",
+      "nameKo": "아벨라워 16년",
+      "nameOriginal": "Aberlour 16Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "4,5"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "72"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 10
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-011",
+      "categoryId": "speyside",
+      "nameKo": "아벨라워 아부나흐",
+      "nameOriginal": "Aberlour A’bunadh",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "3,8"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "62"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 11
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-012",
+      "categoryId": "speyside",
+      "nameKo": "글렌피딕 12년",
+      "nameOriginal": "Glenfiddich 12Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "2,2"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "34"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 12
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-013",
+      "categoryId": "speyside",
+      "nameKo": "글렌피딕 15년",
+      "nameOriginal": "Glenfiddich 15Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "2,5"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "38"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 13
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-014",
+      "categoryId": "speyside",
+      "nameKo": "글렌피딕 18년",
+      "nameOriginal": "Glenfiddich 18Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "3,8"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "62"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 14
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-015",
+      "categoryId": "speyside",
+      "nameKo": "글렌피딕 21년",
+      "nameOriginal": "Glenfiddich 21Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "missing",
+          "raw": null
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "missing",
+          "raw": null
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 15
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-016",
+      "categoryId": "speyside",
+      "nameKo": "글렌리벳 12년",
+      "nameOriginal": "Glenlivet 12Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "2,4"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "36"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 16
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-017",
+      "categoryId": "speyside",
+      "nameKo": "글렌리벳 15년",
+      "nameOriginal": "Glenlivet 15Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "2,8"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "42"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 17
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-018",
+      "categoryId": "speyside",
+      "nameKo": "글렌리벳 18년",
+      "nameOriginal": "Glenlivet 18Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "4,2"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "68"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 18
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-019",
+      "categoryId": "speyside",
+      "nameKo": "글렌파클라스 10년",
+      "nameOriginal": "Glenfarclas 10Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "2,2"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "34"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 19
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-020",
+      "categoryId": "speyside",
+      "nameKo": "글렌파클라스 12년",
+      "nameOriginal": "Glenfarclas 12Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "2,6"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "38"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 20
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-021",
+      "categoryId": "speyside",
+      "nameKo": "글렌파클라스 15년",
+      "nameOriginal": "Glenfarclas 15Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "2,8"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "42"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 21
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-022",
+      "categoryId": "speyside",
+      "nameKo": "글렌파클라스 105 CS",
+      "nameOriginal": "Glenfarclas 105 CS",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "missing",
+          "raw": null
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "missing",
+          "raw": null
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 22
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-023",
+      "categoryId": "speyside",
+      "nameKo": "글렌파클라스 21년",
+      "nameOriginal": "Glenfarclas 21Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "missing",
+          "raw": null
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "missing",
+          "raw": null
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 23
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-024",
+      "categoryId": "speyside",
+      "nameKo": "글렌파클라스 25년",
+      "nameOriginal": "Glenfarclas 25Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "8,5"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "160"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 24
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-025",
+      "categoryId": "speyside",
+      "nameKo": "글렌알라키 10년 CS 배치 12",
+      "nameOriginal": "Glenallachie 10YCS (Batch 12)",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "3,2"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "48"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 25
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-026",
+      "categoryId": "speyside",
+      "nameKo": "맥캘란 셰리 12년",
+      "nameOriginal": "Macallan Sherry 12Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "2,8"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "42"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 26
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-027",
+      "categoryId": "speyside",
+      "nameKo": "맥캘란 15년",
+      "nameOriginal": "Macallan 15Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "3,8"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "62"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 27
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-028",
+      "categoryId": "speyside",
+      "nameKo": "맥캘란 18년",
+      "nameOriginal": "Macallan 18Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "8,0"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "120"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 28
+        }
+      ],
+      "editorialNotes": []
+    },
+    {
+      "id": "speyside-029",
+      "categoryId": "speyside",
+      "nameKo": "모틀락 16년",
+      "nameOriginal": "Mortlach 16Y",
+      "ingredientsKo": [],
+      "ingredientsOriginal": [],
+      "options": [],
+      "servingNote": null,
+      "price": {
+        "kind": "whisky",
+        "glass": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "3,8"
+        },
+        "bottle": {
+          "amountKrw": null,
+          "status": "unverified",
+          "raw": "62"
+        }
+      },
+      "sourceRefs": [
+        {
+          "fileName": "스크린샷 2026-10-22 112449.png",
+          "pageId": "112449",
+          "rowIndex": 29
+        }
+      ],
+      "editorialNotes": []
+    }
+  ],
+  "whiskyUnitStatus": "unverified",
+  "sourceRowCount": 70
+}

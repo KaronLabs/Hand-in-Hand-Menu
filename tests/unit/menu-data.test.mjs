@@ -1,0 +1,30 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import {readFileSync} from 'node:fs';
+import {validateMenu} from '../../src/core/menu.mjs';
+const menu=JSON.parse(readFileSync(new URL('../../data/menu.json',import.meta.url)));
+const clone=()=>structuredClone(menu);
+test('source-linked menu is valid and preserves every source row',()=>{assert.deepEqual(validateMenu(menu),[]);assert.deepEqual(menu.categories.map(c=>menu.items.filter(i=>i.categoryId===c.id).length),[11,7,8,7,8,29]);assert.equal(menu.items.length,70);});
+test('same-named Balvenie rows have separate stable identities',()=>{assert.deepEqual(menu.items.filter(i=>i.nameOriginal==='Balvenie 12Y').map(i=>i.id),['speyside-001','speyside-002']);});
+test('hand-checked prices and options agree with source',()=>{assert.equal(menu.items.find(i=>i.id==='food-001').price.single.amountKrw,22000);assert.equal(menu.items.find(i=>i.id==='food-003').price.single.amountKrw,35000);assert.equal(menu.items.find(i=>i.id==='modern-008').price.single.amountKrw,28000);assert.deepEqual(menu.items.find(i=>i.id==='food-006').options.map(o=>o.labelKo),['바질 페스토','디아볼라','마르게리타']);});
+for(const bad of [null,{}, {categories:[],items:null}, {categories:null,items:[]}])test(`reject invalid menu root ${JSON.stringify(bad)}`,()=>assert.equal(validateMenu(bad)[0].code,'invalid_menu'));
+const mutations=[
+ ['duplicate_category',m=>m.categories.push(m.categories[0])],
+ ['invalid_category',m=>m.categories[0].id=''],
+ ['invalid_category',m=>m.categories[0].sourceFile='../secret'],
+ ['duplicate_id',m=>m.items[1].id=m.items[0].id],
+ ['unknown_category',m=>m.items[0].categoryId='nope'],
+ ['invalid_name',m=>m.items[0].nameKo=''],
+ ['invalid_source',m=>m.items[0].sourceRefs=[]],
+ ['duplicate_source',m=>m.items[1].sourceRefs=m.items[0].sourceRefs],
+ ['source_count',m=>m.sourceRowCount=69],
+ ['invalid_price',m=>m.items[0].price.single.amountKrw=-1],
+ ['invalid_price',m=>m.items[0].price.single.amountKrw=NaN],
+ ['invalid_price',m=>m.items[0].price.single.amountKrw=0],
+ ['invalid_price',m=>m.items[0].price.single.status='wat'],
+ ['invalid_price',m=>m.items[41].price.glass.amountKrw=24000],
+ ['invalid_price',m=>m.items[41].price.bottle.status='missing'],
+ ['invalid_price',m=>m.items[0].price.kind='wat'],
+ ['invalid_unit',m=>m.whiskyUnitStatus='wat'],
+ ['invalid_price',m=>{m.whiskyUnitStatus='verified';m.items[41].price.glass={raw:'wat',status:'verified',amountKrw:24000};}],
+];
+for(const [code,change] of mutations)test(`detect ${code}: ${change}`,()=>{const m=clone();change(m);assert.ok(validateMenu(m).some(i=>i.code===code));});
+test('confirmed whisky values must agree with raw source units',()=>{const m=clone();m.whiskyUnitStatus='verified';m.items.filter(i=>i.price.kind==='whisky').forEach(i=>{for(const key of ['glass','bottle']){const p=i.price[key];if(p.raw!==null){p.status='verified';p.amountKrw=Number(p.raw.replace(',','.'))*10000;}}});assert.deepEqual(validateMenu(m),[]);m.items[41].price.glass.amountKrw=25000;assert.ok(validateMenu(m).some(i=>i.code==='invalid_price'));});
