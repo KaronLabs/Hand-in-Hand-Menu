@@ -587,6 +587,11 @@ footer>a:first-child{
 }
 
 }
+@media(max-width:360px){
+  .hero>img{
+    right:-44%
+  }
+}
 @media(prefers-reduced-motion:reduce){
   html{
   scroll-behavior:auto
