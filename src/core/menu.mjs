@@ -1,3 +1,4 @@
+const sourcePages={food:['112400',11],campari:['112413',7],italy:['112435',8],classic:['112440',7],modern:['112445',8],speyside:['112449',29]};
 const failure = code => Object.assign(new RangeError(code), {code});
 export function parseWhiskyPrice(raw, unitStatus) {
   if (!['verified','unverified'].includes(unitStatus)) throw failure('invalid_unit');
@@ -21,7 +22,8 @@ export function validateMenu(menu) {
   const issues=[]; const issue=(code,itemId)=>issues.push({code,itemId,message:code});
   const categories=new Map();
   for(const category of menu.categories){
-    if (!category.id || !/^\d{6}\.png$/.test(category.sourceFile)) issue('invalid_category',null);
+    const expected=sourcePages[category.id];
+    if (!expected || category.sourceFile!==`${expected[0]}.png`) issue('invalid_category',null);
     if(categories.has(category.id)) issue('duplicate_category',null);
     categories.set(category.id,category);
   }
@@ -33,7 +35,10 @@ export function validateMenu(menu) {
     if(!categories.has(item.categoryId)) issue('unknown_category',item.id);
     if(typeof item.nameKo !== 'string' || item.nameKo.trim()==='' || typeof item.nameOriginal !== 'string' || item.nameOriginal.trim()==='') issue('invalid_name',item.id);
     if(!Array.isArray(item.sourceRefs) || item.sourceRefs.length===0) issue('invalid_source',item.id);
-    else for(const ref of item.sourceRefs){
+    else for(const [index,ref] of item.sourceRefs.entries()){
+      const expected=sourcePages[item.categoryId];
+      if(!ref || !expected || ref.pageId!==expected[0] || ref.fileName!==`스크린샷 2026-10-22 ${expected[0]}.png` || !Number.isInteger(ref.rowIndex) || ref.rowIndex<1 || ref.rowIndex>expected[1]){issue('invalid_source',item.id);continue;}
+      if(index===0 && item.id!==`${item.categoryId}-${String(ref.rowIndex).padStart(3,'0')}`)issue('invalid_id',item.id);
       const key=`${ref.pageId}:${ref.rowIndex}`;
       if(refs.has(key)) issue('duplicate_source',item.id);
       refs.add(key);sourceCount++;

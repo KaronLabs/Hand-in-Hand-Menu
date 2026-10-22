@@ -238,7 +238,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{
   overflow-wrap:anywhere
 }
 .original-name{
-  font:11px/1.5 var(--serif);
+  font:16px/1.5 var(--serif);
   letter-spacing:.6px;
   color:var(--muted);
   margin:4px 0 8px;
@@ -246,13 +246,13 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{
   word-break:normal
 }
 .ingredients{
-  font-size:12px;
+  font-size:16px;
   color:var(--muted);
   line-height:1.9;
   margin:0
 }
 .options{
-  font-size:12px;
+  font-size:16px;
   color:var(--muted);
   margin:9px 0 0
 }
@@ -263,7 +263,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{
   margin-right:3px
 }
 .portion{
-  font-size:11px;
+  font-size:16px;
   color:var(--accent);
   font-weight:400;
   white-space:nowrap
@@ -278,7 +278,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{
   gap:15px;
   align-items:center;
   text-align:right;
-  font-size:12px;
+  font-size:16px;
   white-space:nowrap;
   padding-top:3px
 }
@@ -287,7 +287,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{
   flex-direction:column
 }
 .whisky-prices small{
-  font:10px var(--sans);
+  font:16px var(--sans);
   color:var(--muted);
   margin-bottom:7px
 }
@@ -533,16 +533,16 @@ footer>span{
   font-size:16px
 }
 .ingredients{
-  font-size:12px
+  font-size:16px
 }
 .original-name{
-  font-size:10px
+  font-size:16px
 }
 .menu-section{
   margin-bottom:38px
 }
 .whisky-prices{
-  font-size:11px;
+  font-size:16px;
   gap:13px
 }
 .is-whisky{
@@ -605,3 +605,10 @@ footer>a:first-child{
 }
 
 }
+
+/* Readable essential menu text on every viewport. */
+.menu-item .original-name,.menu-item .ingredients,.menu-item .options,.menu-item .portion,.menu-item .price,.menu-item .whisky-prices,.menu-item .whisky-prices small{font-size:16px}
+.menu-item.is-whisky{grid-template-columns:minmax(0,1fr);gap:10px}
+.whisky-prices{justify-content:flex-start;text-align:left;gap:30px}
+.whisky-prices>span{flex-direction:row;align-items:baseline;gap:10px}
+.whisky-prices small{margin:0;color:var(--muted)}

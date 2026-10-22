@@ -28,3 +28,20 @@ const mutations=[
 ];
 for(const [code,change] of mutations)test(`detect ${code}: ${change}`,()=>{const m=clone();change(m);assert.ok(validateMenu(m).some(i=>i.code===code));});
 test('confirmed whisky values must agree with raw source units',()=>{const m=clone();m.whiskyUnitStatus='verified';m.items.filter(i=>i.price.kind==='whisky').forEach(i=>{for(const key of ['glass','bottle']){const p=i.price[key];if(p.raw!==null){p.status='verified';p.amountKrw=Number(p.raw.replace(',','.'))*10000;}}});assert.deepEqual(validateMenu(m),[]);m.items[41].price.glass.amountKrw=25000;assert.ok(validateMenu(m).some(i=>i.code==='invalid_price'));});
+const provenanceMutations=[
+ ['empty stable ID',m=>m.items[0].id=''],
+ ['invented source replacing a real row',m=>m.items[0].sourceRefs=[{fileName:'not-a-source.png',pageId:'invented',rowIndex:-10}]],
+ ['out-of-range source row',m=>m.items[0].sourceRefs[0].rowIndex=12],
+ ['noninteger source row',m=>m.items[0].sourceRefs[0].rowIndex=1.5],
+ ['mismatched source filename',m=>m.items[0].sourceRefs[0].fileName='wrong.png'],
+ ['source moved to wrong category',m=>m.items[0].categoryId='classic'],
+ ['source page category mismatch',m=>m.items[0].sourceRefs[0].pageId='112413'],
+ ['invalid source object',m=>m.items[0].sourceRefs=[null]],
+ ['missing source reference array',m=>delete m.items[0].sourceRefs],
+ ['category source page substitution',m=>m.categories[0].sourceFile='112449.png'],
+ ['invented category',m=>m.categories[0].id='invented'],
+ ['nonstring Korean name',m=>m.items[0].nameKo=null],
+ ['empty original name',m=>m.items[0].nameOriginal=''],
+ ['nonstring original name',m=>m.items[0].nameOriginal=null],
+];
+for(const [label,change] of provenanceMutations)test(`reject ${label}`,()=>{const m=clone();change(m);assert.ok(validateMenu(m).length>0);});
