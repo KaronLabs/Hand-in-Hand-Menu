@@ -57,6 +57,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{
   flex:1
 }
 .masthead>a{
+  display:flex;
+  align-items:center;
+  min-height:44px;
   font:34px/1 var(--serif);
   text-decoration:none;
   letter-spacing:-1.5px
@@ -257,7 +260,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{
   margin:9px 0 0
 }
 .options span{
-  font-size:10px;
+  font-size:16px;
   border:1px solid var(--line);
   padding:1px 5px;
   margin-right:3px
@@ -380,6 +383,9 @@ footer{
   border-top:1px solid var(--ink)
 }
 footer>a:first-child{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
   font:36px var(--serif);
   text-decoration:none;
   letter-spacing:-1px

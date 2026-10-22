@@ -1,5 +1,7 @@
 # Hand in Hand QR Menu Implementation Plan
 
+> 실행 상태 갱신 (2026-10-22): 사용자가 직접 순차 구현을 승인하여 첫 공개 버전이 배포되었습니다. 아래의 초안/승인 대기/미실행 문구와 체크박스는 당시 계획을 보존한 기록이며 현재 상태가 아닙니다. 실행 결과와 미검증 범위는 `docs/verification/release.md` 및 `docs/verification/2026-10-22-self-review.md`를 기준으로 확인합니다.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 기존 메뉴판 6장의 출처와 가격을 보존하고 손님이 테이블 QR로 읽을 수 있는 공개 모바일 메뉴판을 제공합니다.

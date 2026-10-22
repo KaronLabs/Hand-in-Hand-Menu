@@ -8,3 +8,6 @@ test('blank query gives all items without changing input',()=>{assert.equal(sele
 test('no results remain empty',()=>assert.deepEqual(selectItems(items,{categoryId:'all',query:'없는메뉴'}),[]));
 test('normalization is case/width/space insensitive',()=>assert.equal(normalizeSearch('  Ｇｉｎ  '),'gin'));
 test('search text excludes prices and includes both ingredient languages',()=>{const s=searchText(items[0]);assert.ok(s.includes('페코리노 치즈'));assert.ok(s.includes('pecorino cheese'));assert.equal(s.includes('22000'),false);});
+
+test('visible Korean food options are searchable',()=>assert.deepEqual(selectItems(items,{categoryId:'food',query:'고르곤졸라'}).map(i=>i.id),['food-007']));
+test('original option labels are searchable without losing source order',()=>assert.deepEqual(selectItems(items,{categoryId:'food',query:'DIAVOLA'}).map(i=>i.id),['food-006','food-007']));

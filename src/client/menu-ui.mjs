@@ -17,7 +17,11 @@ export function initMenuUI(document){
       row.hidden=!((category==='all'||row.dataset.category===category)&&row.dataset.search.includes(query));
       if(!row.hidden)count++;
     }
-    for(const section of sections)section.hidden=![...section.querySelectorAll('[data-menu-item]')].some(row=>!row.hidden);
+    for(const section of sections){
+      const visible=[...section.querySelectorAll('[data-menu-item]')].filter(row=>!row.hidden).length;
+      section.hidden=visible===0;
+      section.querySelector('.section-count').textContent=`${visible}가지`;
+    }
     for(const button of buttons)button.setAttribute('aria-pressed',String(button.dataset.categoryFilter===category));
     empty.hidden=count!==0;
     status.textContent=`${count}개의 메뉴 · 가격 단위: 원`;
@@ -27,7 +31,7 @@ export function initMenuUI(document){
   for(const button of buttons)button.addEventListener('click',()=>{
     category=button.dataset.categoryFilter;
     apply();
-    document.querySelector('#menu').scrollIntoView?.({block:'start',behavior:'smooth'});
+    document.querySelector('#menu').scrollIntoView?.({block:'start'});
   });
   document.querySelector('[data-menu-clear]').addEventListener('click',reset);
   const controller={reset};controllers.set(document,controller);

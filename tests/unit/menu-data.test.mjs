@@ -45,3 +45,26 @@ const provenanceMutations=[
  ['nonstring original name',m=>m.items[0].nameOriginal=null],
 ];
 for(const [label,change] of provenanceMutations)test(`reject ${label}`,()=>{const m=clone();change(m);assert.ok(validateMenu(m).length>0);});
+
+const safetyMutations=[
+ ['whisky cannot use a single verified price to bypass unit confirmation','invalid_price',m=>m.items[41].price={kind:'single',single:{raw:'1',status:'verified',amountKrw:1}}],
+ ['food cannot substitute whisky price fields','invalid_price',m=>m.items[0].price=structuredClone(m.items[41].price)],
+ ['verified won amount must agree with its raw source price','invalid_price',m=>m.items[0].price.single.amountKrw=999],
+ ['malformed raw won price is rejected','invalid_price',m=>m.items[0].price.single.raw='22,00'],
+ ['nontext raw won price is rejected','invalid_price',m=>m.items[0].price.single.raw=22000],
+ ['null category is reported without crashing','invalid_category',m=>m.categories[0]=null],
+ ['missing category title cannot render undefined','invalid_category',m=>delete m.categories[0].titleKo],
+ ['blank original category title is rejected','invalid_category',m=>m.categories[0].titleOriginal=' '],
+ ['null item is reported without crashing','invalid_item',m=>m.items[0]=null],
+ ['missing ingredients cannot pass validation then crash rendering','invalid_content',m=>delete m.items[0].ingredientsKo],
+ ['nontext original ingredient is rejected','invalid_content',m=>m.items[0].ingredientsOriginal=[null]],
+ ['missing option array is rejected','invalid_content',m=>delete m.items[0].options],
+ ['null option is rejected','invalid_content',m=>m.items[0].options=[null]],
+ ['missing original option label is rejected','invalid_content',m=>delete m.items[5].options[0].labelOriginal],
+ ['nontext serving note is rejected','invalid_content',m=>m.items[0].servingNote={}],
+ ['missing price object is reported without crashing','invalid_price',m=>delete m.items[0].price],
+ ['missing single price is reported without crashing','invalid_price',m=>delete m.items[0].price.single],
+ ['missing whisky bottle price is reported without crashing','invalid_price',m=>delete m.items[41].price.bottle],
+ ['merging source rows without confirmation is rejected','invalid_source',m=>{m.items[41].sourceRefs.push(m.items[42].sourceRefs[0]);m.items.splice(42,1);}],
+];
+for(const [label,code,change] of safetyMutations)test(label,()=>{const m=clone();change(m);let issues;assert.doesNotThrow(()=>issues=validateMenu(m));assert.ok(issues.some(i=>i.code===code),JSON.stringify(issues));});
