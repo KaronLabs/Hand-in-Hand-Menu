@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {parseHTML} from 'linkedom';
+import {renderMenuPage} from '../../src/render/menu-page.mjs';
+const menu=JSON.parse(readFileSync(new URL('../../data/menu.json',import.meta.url)));
+const doc=m=>parseHTML(renderMenuPage(m)).document;
+test('all 70 menu rows are readable without client execution',()=>{const d=doc(menu);assert.equal(d.querySelectorAll('[data-menu-item]').length,70);assert.equal(d.querySelectorAll('[data-menu-item][hidden]').length,0);assert.match(d.body.textContent,/22,000원/);});
+test('portions and options survive rendering',()=>{const d=doc(menu);assert.match(d.querySelector('[data-item-id="food-005"]').textContent,/6개/);assert.match(d.querySelector('[data-item-id="food-006"]').textContent,/바질 페스토/);});
+test('whisky has clearly separated glass and bottle labels',()=>{const d=doc(menu);const row=d.querySelector('[data-item-id="speyside-015"]');assert.match(row.textContent,/잔/);assert.match(row.textContent,/병/);assert.equal((row.textContent.match(/직원 문의/g)||[]).length,2);assert.doesNotMatch(row.textContent,/(?<!\d)0원/);});
+test('six original images and generated menu artwork are accessible',()=>{const d=doc(menu);assert.equal(d.querySelectorAll('details[data-source-menu]').length,6);assert.equal(d.querySelectorAll('img[data-original]').length,6);assert.ok(d.querySelector('a[href="./assets/food-menu-redesign.webp"]'));});
+test('all text and attributes escape markup metacharacters',()=>{const m=structuredClone(menu);m.items[0].nameKo='<img src=x onerror=alert(1)> & "test"';m.items[0].nameOriginal="<script>alert('x')</script>";const d=doc(m);const row=d.querySelector('[data-item-id="food-001"]');assert.match(row.textContent,/<img src=x/);assert.equal(row.querySelector('img'),null);assert.equal(row.querySelector('script'),null);assert.match(row.dataset.search,/alert/);});
+test('enhanced controls start hidden until initialization',()=>{const d=doc(menu);assert.ok(d.querySelector('[data-menu-tools]').hasAttribute('hidden'));assert.equal(d.documentElement.lang,'ko');});

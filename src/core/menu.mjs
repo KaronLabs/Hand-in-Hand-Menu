@@ -57,3 +57,9 @@ export function validateMenu(menu) {
   if(sourceCount!==70 || menu.sourceRowCount!==70) issue('source_count',null);
   return issues;
 }
+export function normalizeSearch(value){return value.normalize('NFKC').trim().toLowerCase();}
+export function searchText(item){return normalizeSearch([item.nameKo,item.nameOriginal,...item.ingredientsKo,...item.ingredientsOriginal].join(' '));}
+export function selectItems(items,{categoryId,query}){
+ const normalized=normalizeSearch(query);
+ return items.filter(item=>(categoryId==='all'||item.categoryId===categoryId)&&searchText(item).includes(normalized));
+}

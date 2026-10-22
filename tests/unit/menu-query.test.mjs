@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
+import {normalizeSearch,searchText,selectItems} from '../../src/core/menu.mjs';
+const {items}=JSON.parse(readFileSync(new URL('../../data/menu.json',import.meta.url)));
+for(const query of ['네그로니','  neGrOnI  ','ＮＥＧＲＯＮＩ'])test(`find Negroni by ${query}`,()=>assert.deepEqual(selectItems(items,{categoryId:'all',query}).map(i=>i.id),['campari-005']));
+test('category and query are AND',()=>assert.deepEqual(selectItems(items,{categoryId:'food',query:'negroni'}),[]));
+test('ingredients are searchable and original order preserved',()=>assert.deepEqual(selectItems(items,{categoryId:'campari',query:'Campari'}).map(i=>i.id),['campari-001','campari-002','campari-003','campari-004','campari-005','campari-006','campari-007']));
+test('blank query gives all items without changing input',()=>{assert.equal(selectItems(items,{categoryId:'all',query:'  '}).length,70);assert.equal(items[0].id,'food-001');});
+test('no results remain empty',()=>assert.deepEqual(selectItems(items,{categoryId:'all',query:'없는메뉴'}),[]));
+test('normalization is case/width/space insensitive',()=>assert.equal(normalizeSearch('  Ｇｉｎ  '),'gin'));
+test('search text excludes prices and includes both ingredient languages',()=>{const s=searchText(items[0]);assert.ok(s.includes('페코리노 치즈'));assert.ok(s.includes('pecorino cheese'));assert.equal(s.includes('22000'),false);});
