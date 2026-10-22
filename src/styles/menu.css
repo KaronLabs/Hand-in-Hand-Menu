@@ -88,7 +88,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{
   mix-blend-mode:multiply
 }
 .hero-copy{
-  padding:28px 0 30px;
+  padding:28px 48px 30px;
   position:relative
 }
 .eyebrow{
@@ -489,7 +489,7 @@ footer>span{
   opacity:.82
 }
 .hero-copy{
-  padding:28px 0 30px
+  padding:28px 24px 30px
 }
 .menu-toolbar{
   padding:9px 0 11px
