@@ -9,6 +9,7 @@ export async function buildSite({menuPath,outDir}){
  await cp(join(root,'assets'),join(outDir,'assets'),{recursive:true});
  await cp(join(root,'src/styles/menu.css'),join(outDir,'assets/menu.css'));
  await mkdir(join(outDir,'assets/core'),{recursive:true});await cp(join(root,'src/core/menu.mjs'),join(outDir,'assets/core/menu.mjs'));
+ await cp(join(root,'src/client'),join(outDir,'assets/client'),{recursive:true});
  return {itemCount:menu.items.length};
 }
 if(process.argv[1]===fileURLToPath(import.meta.url))console.log(await buildSite({menuPath:join(root,'data/menu.json'),outDir:join(root,'dist')}));
